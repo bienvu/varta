@@ -1,0 +1,65 @@
+%btn,
+.btn {
+  @include roboto;
+  appearance: none;
+  background-image: none;
+  border-radius: 0;
+  border: rem(1px) solid $btn-color;
+  box-shadow: none;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+  min-width: 117px;
+  outline: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-shadow: none;
+  transition: all 0.3s ease;
+  background-color: $btn-color;
+  color: $white;
+  cursor: pointer;
+  outline: 0;
+
+  &:active,
+  &:hover {
+    background-color: $btn-color-hover;
+    border-color: $btn-color-hover;
+    color: $white;
+  }
+
+  &--small {
+    padding: 10px 26px;
+  }
+
+  &--large {
+    font-size: 32px;
+    padding: 40px 70px;
+  }
+
+  &--medium {
+    padding: 21px;
+  }
+
+  &--white {
+    background-color: $white;
+    color: $text-color;
+
+    &:hover {
+      background-color: $light-gray;
+      color: $text-color;
+    }
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--arrow {
+    &:after {
+      @extend %icons;
+      @extend .icon-arrow-right1:before;
+      font-size: 12px;
+      margin-left: 25px;
+    }
+  }
+}

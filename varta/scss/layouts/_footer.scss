@@ -1,0 +1,44 @@
+.footer {
+  padding: 57px 0;
+  background: url("../images/footer-bg.jpg") no-repeat 0 0 transparent;
+  background-size: cover;
+  color: $white;
+
+  h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      margin-bottom: 18px;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+.social {
+  margin-top: 40px;
+
+  a {
+    font-size: 0;
+    margin-right: 25px;
+    color: $white;
+
+    &:before {
+      font-size: 40px;
+    }
+  }
+}
+
+.group-btn {
+  a {
+    margin-top: 40px;
+    width: 100%;
+  }
+}

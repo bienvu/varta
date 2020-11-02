@@ -1,0 +1,37 @@
+name: Varta theme
+type: theme
+base theme: classy
+description: "VARTA provides independent information and support for individuals, couples, and health professionals on fertility, infertility, assisted reproductive treatment (ART) and the best interests of children born."
+package: Custom
+core: 8.x
+
+libraries:
+  - varta/global-styling
+  - varta/global-js
+
+regions:
+  header_top: "Header Top"
+  header_logo: "Header Logo"
+  header_content: "Header Content"
+  title: "Page Title"
+  breadcrumb: "Breadcrumb"
+  top_content: "Top Content"
+  content: Content
+  sidebar: Sidebar
+  bottom_content: "Bottom Content"
+  content_bottom_left: Content Bottom Left
+  content_bottom_right: Content Bottom Right
+  footer_top: "Footer Top"
+  footer_first: "Footer First"
+  footer_second: "Footer Second"
+  footer_third: "Footer Third"
+  footer_fourth: "Footer Fourth"
+
+component-libraries:
+  components:
+    paths:
+      - assets/pattern-lab/source/_patterns/00-base-elements
+      - assets/pattern-lab/source/_patterns/01-components
+  layouts:
+    paths:
+      - assets/pattern-lab/source/_layouts
